@@ -7,8 +7,8 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.mobileapp_matriculauniversidad.Controllers.ControllerLogIn
 import com.mobileapp_matriculauniversidad.R
-import com.mobileapp_matriculauniversidad.Vista.Administrador.Estudiante.EstudianteAdministrador
-import com.mobileapp_matriculauniversidad.Vista.Matriculador.PrincipalMatriculadorActivity
+import com.mobileapp_matriculauniversidad.Vista.Administrador.Cliente.EstudianteAdministrador
+import com.mobileapp_matriculauniversidad.Vista.Cliente.Cliente
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,8 +47,8 @@ class LoginActivity : AppCompatActivity() {
                         i.putExtra("login", ptr)
                         startActivity(i)
 
-                    } else if (ptr.rol == "Matriculador") {
-                        val i = Intent(this, PrincipalMatriculadorActivity::class.java)
+                    } else if (ptr.rol == "Cliente") {
+                        val i = Intent(this, Cliente::class.java)
                         i.putExtra("login", ptr)
                         startActivity(i)
                     }

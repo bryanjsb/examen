@@ -10,9 +10,11 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.MobileApp_MatriculaUniversidad">
         <activity
-                android:name=".Vista.Administrador.Curso.Grupo.ActualizarGrupoCurso"
+                android:name=".Vista.Cliente.Cliente"
                 android:exported="true"/>
-        <!-- vistas splash screen -->
+        <activity
+                android:name=".Vista.Administrador.Curso.Grupo.ActualizarGrupoCurso"
+                android:exported="true"/> <!-- vistas splash screen -->
         <activity
                 android:name=".SplashActivity"
                 android:exported="true">
@@ -21,9 +23,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-
-        <!-- vistas login -->
+        </activity> <!-- vistas login -->
         <activity
                 android:name=".Vista.Login.CambiarContrasenaLoginActivity"
                 android:exported="true"/>
@@ -46,7 +46,6 @@
         <activity
                 android:name=".Vista.Administrador.Curso.CursoAdministrador"
                 android:exported="true">
-
         </activity>
         <activity
                 android:name=".Vista.Administrador.Curso.actualizarCurso"
@@ -55,22 +54,22 @@
                 android:name=".Vista.Administrador.Curso.InsertarCurso"
                 android:exported="true"/> <!-- vistas estudiante administrador -->
         <activity
-                android:name=".Vista.Administrador.Estudiante.EstudianteAdministrador"
+                android:name=".Vista.Administrador.Cliente.EstudianteAdministrador"
                 android:exported="true"/>
         <activity
-                android:name=".Vista.Administrador.Estudiante.actualizarEstudiante"
+                android:name=".Vista.Administrador.Cliente.actualizarEstudiante"
                 android:exported="true"/>
         <activity
-                android:name=".Vista.Administrador.Estudiante.InsertarEstudiante"
+                android:name=".Vista.Administrador.Cliente.InsertarEstudiante"
                 android:exported="true"/> <!-- vistas profesor administrador -->
         <activity
-                android:name=".Vista.Administrador.Profesor.ProfesorAdministrador"
+                android:name=".Vista.Administrador.Factura.ProfesorAdministrador"
                 android:exported="true"/>
         <activity
-                android:name=".Vista.Administrador.Profesor.actualizarProfesor"
+                android:name=".Vista.Administrador.Factura.actualizarProfesor"
                 android:exported="true"/>
         <activity
-                android:name=".Vista.Administrador.Profesor.InsertarProfesor"
+                android:name=".Vista.Administrador.Factura.InsertarProfesor"
                 android:exported="true"/> <!-- vistas matriculador -->
         <activity
                 android:name=".Vista.Matriculador.PrincipalMatriculadorActivity"

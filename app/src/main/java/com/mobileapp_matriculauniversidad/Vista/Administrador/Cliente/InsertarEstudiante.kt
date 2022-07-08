@@ -1,4 +1,4 @@
-package com.mobileapp_matriculauniversidad.Vista.Administrador.Estudiante
+package com.mobileapp_matriculauniversidad.Vista.Administrador.Cliente
 
 
 import android.content.Intent
@@ -9,15 +9,15 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.mobileapp_matriculauniversidad.Controllers.ControllerEstudiante
+import com.mobileapp_matriculauniversidad.Controllers.ControllerCliente
 import com.mobileapp_matriculauniversidad.Entidades.Cliente
 import com.mobileapp_matriculauniversidad.R
 import com.mobileapp_matriculauniversidad.SplashActivity
-import com.mobileapp_matriculauniversidad.Vista.Administrador.Profesor.ProfesorAdministrador
+import com.mobileapp_matriculauniversidad.Vista.Administrador.Factura.ProfesorAdministrador
 
 class InsertarEstudiante : AppCompatActivity() {
 
-    var controllerEstudiante: ControllerEstudiante = ControllerEstudiante.instance
+    var controllerCliente: ControllerCliente = ControllerCliente.instance
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_administrador_estudiante_insertar)
@@ -35,11 +35,11 @@ class InsertarEstudiante : AppCompatActivity() {
 
         when (item.itemId) {
 
-            R.id.item_princ_admin_profesores -> {
+            R.id.item_princ_admin_facturas -> {
                 Toast.makeText(applicationContext, "Activity Profesores Administrador", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, ProfesorAdministrador::class.java))
             }
-            R.id.item_princ_admin_estudiantes -> {
+            R.id.item_princ_admin_clientes -> {
                 Toast.makeText(applicationContext, "Activity Estudiantes Administrador", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, EstudianteAdministrador::class.java))
             }
@@ -78,7 +78,7 @@ class InsertarEstudiante : AppCompatActivity() {
                     date.text.toString()
                 )
 
-                controllerEstudiante.agregar(p)
+                controllerCliente.agregar(p)
                 val i = Intent(this, EstudianteAdministrador::class.java)
                 startActivity(i)
             }

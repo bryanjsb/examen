@@ -1,4 +1,4 @@
-package com.mobileapp_matriculauniversidad.Vista.Administrador.Profesor
+package com.mobileapp_matriculauniversidad.Vista.Administrador.Factura
 
 
 import android.content.Intent
@@ -9,44 +9,52 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.mobileapp_matriculauniversidad.Controllers.ControllerProfesor
 import com.mobileapp_matriculauniversidad.Entidades.Factura
 import com.mobileapp_matriculauniversidad.R
 import com.mobileapp_matriculauniversidad.SplashActivity
-import com.mobileapp_matriculauniversidad.Vista.Administrador.Estudiante.EstudianteAdministrador
+import com.mobileapp_matriculauniversidad.Vista.Administrador.Cliente.EstudianteAdministrador
 
-class InsertarProfesor : AppCompatActivity() {
-
-    var controllerProfesor: ControllerProfesor = ControllerProfesor.instance
+class actualizarProfesor : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_administrador_profesor_insertar)
-        setSupportActionBar(findViewById(R.id.toolbar_profesor_insertar_administrador))
+        setContentView(R.layout.activity_administrador_profesor_actualizar)
+        setSupportActionBar(findViewById(R.id.toolbar_profesor_actualizar_administrador))
 
         cancelar()
+
         insertar()
     }
 
     private fun insertar() {
-        val cedula = findViewById<EditText>(R.id.txt_cedula)
-        val nombre = findViewById<EditText>(R.id.txt_nombre)
-        val telefono = findViewById<EditText>(R.id.txt_telefono)
-        val email = findViewById<EditText>(R.id.txt_email)
-        val btn_register = findViewById<Button>(R.id.btnInsertarProfesor)
+        val cedulaProfesor = findViewById<EditText>(R.id.tv_actualizar_cedula_profesor_admin)
+        val nombreProfesor = findViewById<EditText>(R.id.tv_actualizar_nombre_profesor_admin)
+        val telefonoProfesor = findViewById<EditText>(R.id.tv_actualizar_telefono_profesor_admin)
+        val emailProfesor = findViewById<EditText>(R.id.tv_actualizar_email_profesor_admin)
+        val clave = findViewById<EditText>(R.id.tv_actualizar_clave_profesor_admin)
 
-        var clave = findViewById<EditText>(R.id.txt_contra)
+        val p = intent.getSerializableExtra("profesor") as Factura
+        cedulaProfesor.setText(p.idFactura)
+        nombreProfesor.setText(p.fecha)
+        telefonoProfesor.setText(p.tipo)
+        emailProfesor.setText(p.moneda)
+        clave.setText(p.cantidad)
+
+        val btn_register = findViewById<Button>(R.id.btn_actualizar_profesor)
 
         btn_register.setOnClickListener {
-            if (cedula.text.isNotEmpty() || nombre.text.isNotEmpty() || telefono.text.isNotEmpty()
-                || email.text.isNotEmpty() || clave.text.isNotEmpty()
+            if (cedulaProfesor.text.isNotEmpty() || nombreProfesor.text.isNotEmpty() ||
+                telefonoProfesor.text.isNotEmpty() || emailProfesor.text.isNotEmpty()
+                || clave.text.isNotEmpty()
             ) {
+                p.idFactura = cedulaProfesor.text.toString()
+                p.fecha = clave.text.toString()
+                p.tipo = nombreProfesor.text.toString()
+                p.moneda = telefonoProfesor.text.toString()
+                p.cantidad = emailProfesor.text.toString().toInt()
 
-                val p = Factura(
-                    cedula.text.toString(), clave.text.toString(),
-                    nombre.text.toString(), telefono.text.toString()
-                )
+                val c = ProfesorAdministrador()
+                c.update(p)
 
-                controllerProfesor.agregar(p)
                 val i = Intent(this, ProfesorAdministrador::class.java)
                 startActivity(i)
             }
@@ -54,7 +62,8 @@ class InsertarProfesor : AppCompatActivity() {
     }
 
     private fun cancelar() {
-        val btn_cancel = findViewById<Button>(R.id.btnCancelarProfesor)
+        val btn_cancel = findViewById<Button>(R.id.btn_act_cancelar_profesor)
+
         btn_cancel.setOnClickListener {
             val i = Intent(this, ProfesorAdministrador::class.java)
             startActivity(i)
@@ -70,11 +79,11 @@ class InsertarProfesor : AppCompatActivity() {
 
         when (item.itemId) {
 
-            R.id.item_princ_admin_profesores -> {
+            R.id.item_princ_admin_facturas -> {
                 Toast.makeText(applicationContext, "Activity Profesores Administrador", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, ProfesorAdministrador::class.java))
             }
-            R.id.item_princ_admin_estudiantes -> {
+            R.id.item_princ_admin_clientes -> {
                 Toast.makeText(applicationContext, "Activity Estudiantes Administrador", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, EstudianteAdministrador::class.java))
             }
@@ -86,4 +95,5 @@ class InsertarProfesor : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
+
 }

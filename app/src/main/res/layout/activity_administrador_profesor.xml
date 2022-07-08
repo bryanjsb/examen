@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Vista.Administrador.Profesor.ProfesorAdministrador"
+        tools:context=".Vista.Administrador.Factura.ProfesorAdministrador"
         android:id="@+id/sv_profesor_administrador">
 
     <LinearLayout

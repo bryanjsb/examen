@@ -1,4 +1,4 @@
-package com.mobileapp_matriculauniversidad.Vista.Administrador.Profesor
+package com.mobileapp_matriculauniversidad.Vista.Administrador.Factura
 
 import android.annotation.SuppressLint
 import android.content.Context

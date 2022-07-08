@@ -1,4 +1,4 @@
-package com.mobileapp_matriculauniversidad.Vista.Administrador.Profesor
+package com.mobileapp_matriculauniversidad.Vista.Administrador.Factura
 
 import android.content.Intent
 import android.graphics.Canvas
@@ -14,17 +14,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
-import com.mobileapp_matriculauniversidad.Controllers.ControllerProfesor
+import com.mobileapp_matriculauniversidad.Controllers.ControllerFactura
 import com.mobileapp_matriculauniversidad.Entidades.Factura
 import com.mobileapp_matriculauniversidad.R
 import com.mobileapp_matriculauniversidad.SplashActivity
-import com.mobileapp_matriculauniversidad.Vista.Administrador.Estudiante.EstudianteAdministrador
+import com.mobileapp_matriculauniversidad.Vista.Administrador.Cliente.EstudianteAdministrador
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator
 import java.util.*
 
 class ProfesorAdministrador : AppCompatActivity() {
 
-    var controllerProfesor: ControllerProfesor = ControllerProfesor.instance
+    var controllerFactura: ControllerFactura = ControllerFactura.instance
 
     lateinit var lista: RecyclerView
     lateinit var adaptador: AdaptadorProfesor
@@ -53,11 +53,11 @@ class ProfesorAdministrador : AppCompatActivity() {
 
         when (item.itemId) {
 
-            R.id.item_princ_admin_profesores -> {
+            R.id.item_princ_admin_facturas -> {
                 Toast.makeText(applicationContext, "Activity Profesores Administrador", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, ProfesorAdministrador::class.java))
             }
-            R.id.item_princ_admin_estudiantes -> {
+            R.id.item_princ_admin_clientes -> {
                 Toast.makeText(applicationContext, "Activity Estudiantes Administrador", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, EstudianteAdministrador::class.java))
             }
@@ -88,7 +88,7 @@ class ProfesorAdministrador : AppCompatActivity() {
                 val fromPosition: Int = viewHolder.adapterPosition
                 val toPosition: Int = target.adapterPosition
 
-                Collections.swap(controllerProfesor.listar(), fromPosition, toPosition)
+                Collections.swap(controllerFactura.listar(), fromPosition, toPosition)
 
                 lista.adapter?.notifyItemMoved(fromPosition, toPosition)
 
@@ -98,17 +98,18 @@ class ProfesorAdministrador : AppCompatActivity() {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
 
                 position = viewHolder.adapterPosition
-                val ptrProfesor: Factura = controllerProfesor.listar()[position]
+                val ptrProfesor: Factura = controllerFactura.listar()[position]
                 if (direction == ItemTouchHelper.LEFT) {
                     profesor = ptrProfesor
-                    controllerProfesor.eliminar(position)
+                    controllerFactura.eliminar(position)
                     lista.adapter?.notifyItemRemoved(position)
 
-                    Snackbar.make(lista, profesor.idFactura + "Se eliminaría...", Snackbar.LENGTH_LONG).setAction("Undo") {
-                        controllerProfesor.listar().add(position, profesor)
-                        lista.adapter?.notifyItemInserted(position)
-                    }.show()
-                    adaptador = AdaptadorProfesor(controllerProfesor.listar())
+                    Snackbar.make(lista, profesor.idFactura + "Se eliminaría...", Snackbar.LENGTH_LONG)
+                        .setAction("Undo") {
+                            controllerFactura.listar().add(position, profesor)
+                            lista.adapter?.notifyItemInserted(position)
+                        }.show()
+                    adaptador = AdaptadorProfesor(controllerFactura.listar())
                     lista.adapter = adaptador
                 } else {
                     profesor = ptrProfesor
@@ -187,7 +188,7 @@ class ProfesorAdministrador : AppCompatActivity() {
 
     private fun obtenerListaProfesor() {
         val Ncarreras = ArrayList<Factura>()
-        for (p in controllerProfesor.listar()) {
+        for (p in controllerFactura.listar()) {
             Ncarreras.add(p)
         }
         adaptador = AdaptadorProfesor(Ncarreras)
@@ -202,9 +203,9 @@ class ProfesorAdministrador : AppCompatActivity() {
     }
 
     fun update(profesor: Factura) {
-        for ((cont, p) in controllerProfesor.listar().withIndex()) {
+        for ((cont, p) in controllerFactura.listar().withIndex()) {
             if (p.idFactura.compareTo(profesor.idFactura) == 0) {
-                controllerProfesor.actualizar(profesor, cont)
+                controllerFactura.actualizar(profesor, cont)
             }
         }
     }

@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
 >
 
-    <item android:title="Profesores" android:id="@+id/item_princ_admin_profesores"/>
-    <item android:title="Estudiantes" android:id="@+id/item_princ_admin_estudiantes"/>
+    <item android:title="Clientes" android:id="@+id/item_princ_admin_clientes"/>
+    <item android:title="Facturas" android:id="@+id/item_princ_admin_facturas"/>
     <item android:title="Salir" android:id="@+id/item_princ_admin_salir" android:icon="@drawable/signin"
     />
 </menu>

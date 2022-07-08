@@ -9,8 +9,7 @@ object ControllerLogIn {
 
     init {
         usuarios.add(Login("1", "1", "Administrador"))
-        usuarios.add(Login("2", "2", "Matriculador"))
-        usuarios.add(Login("3", "3", "Estudiante"))
+        usuarios.add(Login("2", "2", "Cliente"))
     }
 
     fun obtenerUsuario(cedula: String, contrasena: String): Login? {

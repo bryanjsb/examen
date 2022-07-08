@@ -1,4 +1,4 @@
-package com.mobileapp_matriculauniversidad.Vista.Administrador.Estudiante
+package com.mobileapp_matriculauniversidad.Vista.Administrador.Cliente
 
 
 import android.content.Intent
@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.mobileapp_matriculauniversidad.Entidades.Cliente
 import com.mobileapp_matriculauniversidad.R
 import com.mobileapp_matriculauniversidad.SplashActivity
-import com.mobileapp_matriculauniversidad.Vista.Administrador.Profesor.ProfesorAdministrador
+import com.mobileapp_matriculauniversidad.Vista.Administrador.Factura.ProfesorAdministrador
 
 class actualizarEstudiante : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,11 +81,11 @@ class actualizarEstudiante : AppCompatActivity() {
 
         when (item.itemId) {
 
-            R.id.item_princ_admin_profesores -> {
+            R.id.item_princ_admin_facturas -> {
                 Toast.makeText(applicationContext, "Activity Profesores Administrador", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, ProfesorAdministrador::class.java))
             }
-            R.id.item_princ_admin_estudiantes -> {
+            R.id.item_princ_admin_clientes -> {
                 Toast.makeText(applicationContext, "Activity Estudiantes Administrador", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, EstudianteAdministrador::class.java))
             }
