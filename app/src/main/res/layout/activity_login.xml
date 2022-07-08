@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Vista.Login.LoginActivity"
+        android:background="@drawable/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+
+    >
+        <ImageView
+                android:src="@drawable/login_logo"
+                android:layout_width="158dp"
+                android:layout_height="132dp" android:id="@+id/iv_logo_login"
+                android:layout_marginTop="44dp"
+                android:layout_gravity="center"/>
+        <EditText
+                android:layout_width="361dp"
+                android:layout_height="46dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/et_email_login"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/style_border"
+                android:isScrollContainer="false"
+                android:drawableStart="@drawable/email"
+                android:hint="Ingrese el Correo Electronico" android:gravity="center" android:layout_gravity="center"/>
+        <EditText
+                android:layout_width="356dp"
+                android:layout_height="46dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/et_password_Login"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/style_border"
+                android:drawableLeft="@drawable/key"
+                android:hint="Ingrese la contraseña" android:layout_gravity="center" android:gravity="center"/>
+        <Button
+                android:text="Iniciar Seccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_signin_login"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="@color/btn_signin"
+                android:drawableStart="@drawable/signin" android:gravity="center" android:layout_gravity="center"
+                app:iconGravity="textEnd|textTop|textStart"/>
+
+        <Button
+                android:text="Cambiar Contraseña"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:id="@+id/btn_log_cambiarContraseña"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="105dp"
+                app:icon="@drawable/key" android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>

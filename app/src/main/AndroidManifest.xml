@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mobileapp_matriculauniversidad">
+
+    <application
+            android:allowBackup="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MobileApp_MatriculaUniversidad">
+        <activity
+                android:name=".Vista.Administrador.Curso.Grupo.ActualizarGrupoCurso"
+                android:exported="true"/>
+        <!-- vistas splash screen -->
+        <activity
+                android:name=".SplashActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- vistas login -->
+        <activity
+                android:name=".Vista.Login.CambiarContrasenaLoginActivity"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Login.LoginActivity"
+                android:exported="true"/> <!-- vistas adminitrador -->
+        <!-- vistas carrera administrador -->
+        <activity
+                android:name=".Vista.Administrador.Carrera.CarreraAdministrador"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Administrador.Carrera.actualizarCarrera"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Administrador.Carrera.InsertarCarrera"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Administrador.Carrera.CursoCarrera.CursoCarreraAdministrador"
+                android:exported="true"/> <!-- vistas cursos administrador -->
+        <activity
+                android:name=".Vista.Administrador.Curso.CursoAdministrador"
+                android:exported="true">
+
+        </activity>
+        <activity
+                android:name=".Vista.Administrador.Curso.actualizarCurso"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Administrador.Curso.InsertarCurso"
+                android:exported="true"/> <!-- vistas estudiante administrador -->
+        <activity
+                android:name=".Vista.Administrador.Estudiante.EstudianteAdministrador"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Administrador.Estudiante.actualizarEstudiante"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Administrador.Estudiante.InsertarEstudiante"
+                android:exported="true"/> <!-- vistas profesor administrador -->
+        <activity
+                android:name=".Vista.Administrador.Profesor.ProfesorAdministrador"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Administrador.Profesor.actualizarProfesor"
+                android:exported="true"/>
+        <activity
+                android:name=".Vista.Administrador.Profesor.InsertarProfesor"
+                android:exported="true"/> <!-- vistas matriculador -->
+        <activity
+                android:name=".Vista.Matriculador.PrincipalMatriculadorActivity"
+                android:exported="true"/>
+    </application>
+
+</manifest>

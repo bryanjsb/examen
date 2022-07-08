@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/bryan/Desktop/Lab#04-05/Ced-304760577-Ced702610004/MobileApp_MatriculaUniversidad/app/src/main/res/drawable/style_border.xml" value="0.17314814814814813" />
+        <entry key="..\:/Users/bryan/Desktop/Lab#04-05/Ced-304760577-Ced702610004/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_carrera.xml" value="0.18" />
+        <entry key="..\:/Users/bryan/Desktop/Lab#04-05/Ced-304760577-Ced702610004/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_estudiante_lista_template.xml" value="0.18704710144927536" />
+        <entry key="..\:/Users/bryan/Desktop/Lab#04-05/Ced-304760577-Ced702610004/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_login_cambiar_contrasena.xml" value="0.1" />
+        <entry key="..\:/Users/bryan/Desktop/Lab#04-05/Ced-304760577-Ced702610004/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.1859375" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.34831460674157305" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/drawable/ic_signin.xml" value="0.1765625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/drawable/style_border.xml" value="0.1765625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/drawable/style_border_edittext.xml" value="0.1765625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout-v23/activity_administrador_cursocarrera.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout-v23/activity_administrador_cursocarrera_actualizar_lista_template.xml" value="0.18" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout-v23/activity_administrador_cursocarrera_lista_template.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout-v23/activity_curso_admin_asociar.xml" value="0.29347826086956524" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout-v23/template_carrera_administrador.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_actualizar_grupo_curso.xml" value="0.23822463768115942" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_admin_carrera_informacion.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_carrera.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_carrera_actualizar.xml" value="0.33" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_carrera_insertar.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_carrera_lista_template.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_curso.xml" value="0.1" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_curso_actualizar.xml" value="0.165625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_curso_insertar.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_curso_lista_template.xml" value="0.29347826086956524" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_cursocarrera.xml" value="0.165625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_cursocarrera_actualizar_lista_template.xml" value="0.165625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_cursocarrera_lista_template.xml" value="0.165625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_cursogrupocarrera_actualizar_lista_template.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_estudiante.xml" value="0.2866847826086957" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_estudiante_actualizar.xml" value="0.165625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_estudiante_insertar.xml" value="0.165625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_estudiante_lista_template.xml" value="0.33" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_principal.xml" value="0.1" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_profesor.xml" value="0.2545289855072464" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_profesor_actualizar.xml" value="0.2545289855072464" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_profesor_insertar.xml" value="0.22" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_administrador_profesor_lista_template.xml" value="0.2545289855072464" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_cambiar_contrasena_login.xml" value="0.5" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_carrera_administrador.xml" value="0.3177083333333333" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_insertar_usuario.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_login_cambiar_contrasena.xml" value="0.5" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_principal_administrador.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_principal_matriculador.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_splash2.xml" value="0.15625" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/activity_update_user.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/cursos/drawable/ic_add.xml" value="0.1859375" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/layout/template_carrera_administrador.xml" value="0.3338541666666667" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/menu/menu_toolbar_principal_administrador.xml" value="0.3536458333333333" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/bryan/Desktop/MobileApp_MatriculaUniversidad/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19270833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Vista.Administrador.Profesor.actualizarProfesor">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar_profesor_actualizar_administrador"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="1dp" android:layout_marginEnd="1dp"
+    />
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/tv_actualizar_cedula_profesor_admin"
+            tools:ignore="SpeakableTextPresentCheck" android:minHeight="48dp"
+            android:hint="cédula"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_profesor_actualizar_administrador"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/tv_actualizar_nombre_profesor_admin"
+            android:hint="nombre"
+            tools:ignore="TouchTargetSizeCheck"
+            app:layout_constraintStart_toStartOf="@+id/tv_actualizar_cedula_profesor_admin"
+            android:layout_marginTop="25dp" android:layout_marginStart="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_actualizar_cedula_profesor_admin"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/tv_actualizar_telefono_profesor_admin"
+            android:hint="teléfono"
+            tools:ignore="TouchTargetSizeCheck"
+            app:layout_constraintStart_toStartOf="@+id/tv_actualizar_nombre_profesor_admin"
+            android:layout_marginTop="26dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_actualizar_nombre_profesor_admin"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/tv_actualizar_email_profesor_admin"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" android:hint="email"
+            app:layout_constraintStart_toStartOf="@+id/tv_actualizar_telefono_profesor_admin"
+            android:layout_marginTop="22dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_actualizar_telefono_profesor_admin"/>
+    <Button
+            android:text="Actualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btn_actualizar_profesor"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="11dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_act_cancelar_profesor"
+            app:layout_constraintEnd_toStartOf="@+id/btn_act_cancelar_profesor"/>
+    <Button
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btn_act_cancelar_profesor"
+            app:layout_constraintStart_toEndOf="@+id/btn_actualizar_profesor" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="153dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="11dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/tv_actualizar_clave_profesor_admin"
+            android:hint="Clave provisional"
+            app:layout_constraintStart_toStartOf="@+id/tv_actualizar_email_profesor_admin"
+            android:layout_marginTop="19dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_actualizar_email_profesor_admin"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
