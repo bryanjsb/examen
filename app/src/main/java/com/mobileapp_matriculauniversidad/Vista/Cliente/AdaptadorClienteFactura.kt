@@ -1,4 +1,4 @@
-package com.mobileapp_matriculauniversidad.Vista.Administrador.Factura
+package com.mobileapp_matriculauniversidad.Vista.Cliente
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,14 +13,14 @@ import com.mobileapp_matriculauniversidad.Entidades.Factura
 import com.mobileapp_matriculauniversidad.R
 import java.util.*
 
-class AdaptadorProfesor(private var items: ArrayList<Factura>) : RecyclerView.Adapter<RecyclerView.ViewHolder>(),
+class AdaptadorClienteFactura(private var items: ArrayList<Factura>) : RecyclerView.Adapter<RecyclerView.ViewHolder>(),
     Filterable {
 
     var itemsList: ArrayList<Factura>? = null
 
     lateinit var mcontext: Context
 
-    class ProfesorHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    class FacturaHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     init {
         this.itemsList = items
@@ -30,7 +30,7 @@ class AdaptadorProfesor(private var items: ArrayList<Factura>) : RecyclerView.Ad
         val personListView =
             LayoutInflater.from(parent.context)
                 .inflate(R.layout.activity_administrador_profesor_lista_template, parent, false)
-        val sch = ProfesorHolder(personListView)
+        val sch = FacturaHolder(personListView)
         mcontext = parent.context
         return sch
     }

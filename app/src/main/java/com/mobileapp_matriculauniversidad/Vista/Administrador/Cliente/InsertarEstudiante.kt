@@ -57,25 +57,23 @@ class InsertarEstudiante : AppCompatActivity() {
         val nombre = findViewById<EditText>(R.id.tv_nombre_estudiante_admin)
         val tel = findViewById<EditText>(R.id.tv_telefono_estudiante_admin)
         val email = findViewById<EditText>(R.id.tv_email_estudiante_admin)
-        val date = findViewById<EditText>(R.id.tv_date_estudiante_admin)
-        val carr = findViewById<EditText>(R.id.tv_carrera_estudiante_admin)
-
-        val clave = findViewById<EditText>(R.id.tv_clave_estudiante_admin)
+        val date = findViewById<EditText>(R.id.tv_direccion_estudiante_admin)
+        val carr = findViewById<EditText>(R.id.tv_celular_estudiante_admin)
 
         val btn_register = findViewById<Button>(R.id.btnInsertaEstudianteAdmin)
 
 
         btn_register.setOnClickListener {
             if (!ced.text.isEmpty() || !nombre.text.isEmpty() || !tel.text.isEmpty()
-                || !email.text.isEmpty() || !date.text.isEmpty() || !carr.text.isEmpty() || !clave.text.isEmpty()
+                || !email.text.isEmpty() || !date.text.isEmpty() || !carr.text.isEmpty()
             ) {
                 val p = Cliente(
                     ced.text.toString(),
-                    clave.text.toString(),
                     nombre.text.toString(),
-                    (tel.text.toString()),
+                    date.text.toString(),
                     email.text.toString(),
-                    date.text.toString()
+                    tel.text.toString(),
+                    carr.text.toString()
                 )
 
                 controllerCliente.agregar(p)

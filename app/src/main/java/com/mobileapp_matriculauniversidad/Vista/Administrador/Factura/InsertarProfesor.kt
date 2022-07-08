@@ -28,22 +28,27 @@ class InsertarProfesor : AppCompatActivity() {
     }
 
     private fun insertar() {
-        val cedula = findViewById<EditText>(R.id.txt_cedula)
-        val nombre = findViewById<EditText>(R.id.txt_nombre)
-        val telefono = findViewById<EditText>(R.id.txt_telefono)
-        val email = findViewById<EditText>(R.id.txt_email)
+        val cedula = findViewById<EditText>(R.id.tv_id_factura)
+        val nombre = findViewById<EditText>(R.id.tv_fecha_factura)
+        val telefono = findViewById<EditText>(R.id.tv_tipo_factura)
+        val email = findViewById<EditText>(R.id.tv_moneda_factura)
+
+        val cantidad = findViewById<EditText>(R.id.txt_cantidad_factura)
+        val descripcion= findViewById<EditText>(R.id.txt_descripcion_factura)
+        val precioUnitario= findViewById<EditText>(R.id.txt_precioUnitario_factura)
+        val importe= findViewById<EditText>(R.id.txt_importe_factura)
         val btn_register = findViewById<Button>(R.id.btnInsertarProfesor)
 
-        var clave = findViewById<EditText>(R.id.txt_contra)
+
 
         btn_register.setOnClickListener {
             if (cedula.text.isNotEmpty() || nombre.text.isNotEmpty() || telefono.text.isNotEmpty()
-                || email.text.isNotEmpty() || clave.text.isNotEmpty()
+                || email.text.isNotEmpty() || cantidad.text.isNotEmpty()
             ) {
 
                 val p = Factura(
-                    cedula.text.toString(), clave.text.toString(),
-                    nombre.text.toString(), telefono.text.toString()
+                    cedula.text.toString(), nombre.text.toString(),   telefono.text.toString(),email.text.toString(),cantidad.text.toString().toInt(),
+                    descripcion.text.toString(),precioUnitario.text.toString().toDouble(),importe.text.toString().toDouble()
                 )
 
                 controllerFactura.agregar(p)

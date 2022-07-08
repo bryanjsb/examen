@@ -28,18 +28,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="4dp"
-                    android:text="Cedula:"
+                    android:text="ID:"
                     android:textAlignment="textStart"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
             <TextView
-                    android:id="@+id/textView_profesor_cedula"
+                    android:id="@+id/textView_id_Factura"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:paddingLeft="4dp"
-                    android:text="cedula"
+                    android:text="id"
                     android:textAlignment="textStart"
                     android:textSize="13sp"/>
 
@@ -56,18 +56,18 @@
                     android:layout_height="26dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="4dp"
-                    android:text="Nombre:"
+                    android:text="Fecha:       "
                     android:textAlignment="textStart"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
             <TextView
-                    android:id="@+id/textView_profesor_nombre"
+                    android:id="@+id/tv_factura_fecha"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="4dp"
-                    android:text="nombre"
+                    android:text="Fecha"
                     android:textAlignment="textStart"
                     android:textSize="14sp"/>
 
@@ -82,18 +82,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="4dp"
-                    android:text="Telefono:"
+                    android:text="Tipo:"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
             <TextView
-                    android:id="@+id/textView_profesor_telefono"
+                    android:id="@+id/tv_factura_tipo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="4dp"
                     android:paddingLeft="4dp"
-                    android:text="telefono"
+                    android:text="Tipo"
                     android:textAlignment="textStart"
                     android:textSize="14sp"/>
 
@@ -108,20 +108,132 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="4dp"
-                    android:text="Email:"
+                    android:text="Moneda:"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
 
             <TextView
-                    android:id="@+id/textView_profesor_email"
+                    android:id="@+id/tv_factura_moneda"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="4dp"
                     android:paddingLeft="4dp"
-                    android:text="email"
+                    android:text="Moneda"
                     android:textAlignment="textStart"
                     android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Cantidad:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_factura_cantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="4dp"
+                    android:text="Cantidad"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Descripcion:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_factura_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="4dp"
+                    android:text="Descripcion"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Precio Uni:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_factura_precioUni"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="4dp"
+                    android:text="Precio Unitario"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Importe:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_factura_importe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="4dp"
+                    android:text="Importe"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"/>
+
+
 
 
         </LinearLayout>
