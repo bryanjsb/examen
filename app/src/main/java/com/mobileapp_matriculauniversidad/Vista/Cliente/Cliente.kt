@@ -153,6 +153,7 @@ class Cliente : AppCompatActivity() {
         i.putExtra("profesor", profesor)
         startActivity(i)
     }
+
     private fun buscar() {
         findViewById<SearchView>(R.id.search_cliente).setOnQueryTextListener(object :
             SearchView.OnQueryTextListener {

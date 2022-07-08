@@ -34,9 +34,9 @@ class InsertarProfesor : AppCompatActivity() {
         val email = findViewById<EditText>(R.id.tv_moneda_factura)
 
         val cantidad = findViewById<EditText>(R.id.txt_cantidad_factura)
-        val descripcion= findViewById<EditText>(R.id.txt_descripcion_factura)
-        val precioUnitario= findViewById<EditText>(R.id.txt_precioUnitario_factura)
-        val importe= findViewById<EditText>(R.id.txt_importe_factura)
+        val descripcion = findViewById<EditText>(R.id.txt_descripcion_factura)
+        val precioUnitario = findViewById<EditText>(R.id.txt_precioUnitario_factura)
+        val importe = findViewById<EditText>(R.id.txt_importe_factura)
         val btn_register = findViewById<Button>(R.id.btnInsertarProfesor)
 
 
@@ -47,8 +47,14 @@ class InsertarProfesor : AppCompatActivity() {
             ) {
 
                 val p = Factura(
-                    cedula.text.toString(), nombre.text.toString(),   telefono.text.toString(),email.text.toString(),cantidad.text.toString().toInt(),
-                    descripcion.text.toString(),precioUnitario.text.toString().toDouble(),importe.text.toString().toDouble()
+                    cedula.text.toString(),
+                    nombre.text.toString(),
+                    telefono.text.toString(),
+                    email.text.toString(),
+                    cantidad.text.toString().toInt(),
+                    descripcion.text.toString(),
+                    precioUnitario.text.toString().toDouble(),
+                    importe.text.toString().toDouble()
                 )
 
                 controllerFactura.agregar(p)
